@@ -19,8 +19,8 @@ public class BookController {
 	public String getBooks(Model model) {
 		
 		model.addAttribute("books", bookRepository.findAll());
-		
-		return "books";
+		// Per mirar el template list
+		return "books/list";
 	}
 
 }
